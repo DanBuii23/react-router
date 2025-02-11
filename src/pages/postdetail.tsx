@@ -11,7 +11,7 @@ export default function PostDetail() {
   const post = posts.find((p) => p.id === Number(postId));
 
   if (!post) {
-    return <h2>Bài viết không tồn tại!</h2>;
+    return <h2>Không có bài viết này!</h2>;
   }
 
   return (
