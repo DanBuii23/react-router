@@ -8,6 +8,7 @@ import PostDetail from "./pages/postdetail";
 import UserInforRoutes from "./routes/userInforRoutes";
 import Authen from "./routes/authen";
 import Login from "./components/login";
+import NotFound from "./components/error";
 
 const isAuthen = false;
 
@@ -63,6 +64,7 @@ function App() {
             {/* Nested Routes */}
             <Route path="/userInfor/*" element={<UserInforRoutes />} />
           </Route>
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </>
