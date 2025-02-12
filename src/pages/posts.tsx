@@ -20,7 +20,7 @@ export default function Posts() {
       </h2>
       <ul className="mt-4 space-y-3">
         {posts.map((post) => (
-          <li key={post.id}>
+          <li className="list-decimal" key={post.id}>
             <Link to={`/posts/${post.id}`}>{post.title}</Link>
           </li>
         ))}
